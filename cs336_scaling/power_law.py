@@ -107,18 +107,3 @@ print(f"{'Compute (C)':<15} {'N_opt':<15} {'D_opt':<15} {'Loss':<10}")
 print("-"*60)
 for p in optimal_points:
     print(f"{p['C']:<15.2e} {p['N_opt']:<15.2e} {p['D_opt']:<15.2e} {p['loss']:<10.4f}")
-# ```
-
-# ## Expected Output
-# ```
-# Fitted scaling laws:
-#   N_opt = 1.23e-05 * C^0.487
-#   D_opt = 1.35e-04 * C^0.513
-
-# For C = 1e+23 FLOPs:
-#   Optimal model size N = 3.45e+10 parameters
-#   Optimal dataset size D = 4.82e+11 tokens
-
-# For C = 1e+24 FLOPs:
-#   Optimal model size N = 1.06e+11 parameters
-#   Optimal dataset size D = 1.57e+12 tokens
